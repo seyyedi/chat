@@ -1,0 +1,74 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Calibri;
+	font-size: 10pt;
+	background-color: #d0d0d0;
+	background: linear-gradient(180deg, #707070, #404040);
+	height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.chat {
+	position: relative;
+	overflow: visible;
+	width: 50%;
+	left: 50%;
+	margin-left: -25%;
+}
+
+.messages {
+	position: relative;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 150px;
+	overflow: hidden;
+}
+
+.message {
+	position: relative;
+	color: #555555;
+	padding: 10px;
+	width: 50%;
+	white-space: pre;
+	float: left;
+	overflow: hidden;
+}
+
+.message.me {
+	float: right;
+	clear: both;
+}
+
+.message + .message {
+	margin-top: 20px;
+}
+
+.new-message {
+	position: fixed;
+	bottom: 20px;
+	height: 100px;
+	width: 50%;
+	left: 50%;
+	margin-left: -25%;
+	box-sizing: border-box;
+}
+
+.message, .new-message > textarea {
+	background-color: rgba(255, 255, 255, 1.0);
+	box-shadow: rgba(0, 0, 0, 0.2) 3px 3px;
+	border-radius: 3px;
+}
+
+.new-message > textarea {
+	position: relative;
+	border: 1px solid #c0c0c0;
+	resize: none;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	padding: 5px;
+	font-family: Tahoma;
+	font-size: 10pt;
+}
